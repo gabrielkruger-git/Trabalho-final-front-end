@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    background-color: #111827;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.introducao {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.introducao h2 {
+    margin-bottom: 10px;
+}
+
+.introducao h4 {
+    margin-bottom: 15px;
+    color: #93c5fd;
+}
+
+.introducao p {
+    line-height: 1.7;
+}
+
+.personagem {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social {
+    width: 60px;
+    transition: 0.3s;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+#middlesection {
+    background-color: #111827;
+}
+
+#apis {
+    background-color: #0f172a;
+}
+
+.api-card {
+    margin-top: 25px;
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.api-card h3 {
+    margin-bottom: 15px;
+}
+
+.api-card input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.api-card button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.api-card button:hover {
+    background-color: #1d4ed8;
+}
+
+#apis input{
+    padding:10px;
+    margin:5px;
+    border-radius:8px;
+    border:none;
+}
+
+#apis button{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#apis hr{
+    margin:30px 0;
+}
+
+#resultadoCEP {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+#bottomsection {
+    background-color: #111827;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #0b1120;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .personagem {
+        width: 280px;
+    }
+}
+
+#resultadoCEP,
+#resultadoDDD,
+#resultadoCNPJ,
+#resultadoBanco {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #111827;
+    border-radius: 10px;
+    line-height: 1.8;
+}
